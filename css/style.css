@@ -128,9 +128,23 @@ footer {
 
   header {
     max-width: 100%;
-    flex-direction: column;
-    height: auto;
+    height: 2em;
     padding: 10px 4%;
   }
 
+  header a{
+    -webkit-text-stroke: 0.03em white;
+  }
+  
+  .archive{
+    padding: 0.5em;
+  }
+
+  article {
+    padding: 10% 5%;
+  }
+
+  footer {
+    padding: 0px;
+  }
 }

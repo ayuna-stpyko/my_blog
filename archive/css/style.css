@@ -138,8 +138,23 @@ footer p{
 
   header {
     max-width: 100%;
-    flex-direction: column;
-    height: auto;
+    height: 2em;
     padding: 10px 4%;
+  }
+
+  header a{
+    -webkit-text-stroke: 0.03em white;
+  }
+  
+  main{
+    padding: 0.5em;
+  }
+
+  article {
+    padding: 3% 3%;
+  }
+
+  footer {
+    padding: 0px;
   }
 }
