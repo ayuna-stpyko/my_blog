@@ -13,12 +13,6 @@ body {
   letter-spacing: 0.05em;
 }
 
-a,
-a:visited {
-  color: #24292e;
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
 }
@@ -69,10 +63,11 @@ header {
   background-attachment: fixed;
 }
 
-header a{
+header a {
   font-weight: 800;
   font-family: "Arial";
-  -webkit-text-stroke: 0.05em white;
+  -webkit-text-stroke: 0.05em #ffffff;
+  text-decoration: none; /* 下線をなくす */
 }
 
 main {
@@ -99,24 +94,43 @@ section {
   margin: 2em 0;
 }
 
-section p{
+section p {
   padding-top: 1em;
 }
 
-.contents{
+section a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+section a:visited {
+  color: #6a5acd;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 415px) {
+  section img {
+    max-width: 70%;
+  }
+}
+
+.contents {
   margin: 1em;
   padding: 1em;
   border: grey 0.7px solid;
   background-color: rgb(250, 250, 250);
 }
 
-ol{
+ol {
   padding-bottom: 1em;
   padding-left: 1em;
   line-height: 1.5em;
 }
 
-.line-though{
+.line-though {
   text-decoration: line-through;
 }
 
@@ -127,8 +141,29 @@ footer {
   padding: 10px 20px;
 }
 
-footer p{
+footer p {
   text-align: center;
+}
+
+.output-box {
+  white-space: pre;
+  font-family: monospace;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.problem {
+  padding: 1em;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 414px) {
@@ -142,11 +177,11 @@ footer p{
     padding: 10px 4%;
   }
 
-  header a{
+  header a {
     -webkit-text-stroke: 0.03em white;
   }
-  
-  main{
+
+  main {
     padding: 0.5em;
   }
 
