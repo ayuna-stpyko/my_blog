@@ -166,6 +166,11 @@ footer p {
   line-height: 1.6;
 }
 
+.long-word {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
 @media screen and (max-width: 414px) {
   h2 {
     margin-bottom: 30px;
