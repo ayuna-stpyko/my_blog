@@ -171,6 +171,10 @@ footer p {
   word-wrap: break-word;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 414px) {
   h2 {
     margin-bottom: 30px;
